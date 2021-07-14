@@ -1,8 +1,9 @@
 <template>
     <v-container class="container">
         <v-row class="row navbar">
-            Press the Next Button to advance the chart. Press Buy to buy, or
-            Sell to short-sell. Press the Flat Buttons to close your trades.
+            Press the Next Bar button to advance the chart. Press Buy to buy, or
+            Sell to short-sell. Press one of the Flat buttons to close your
+            trades.
         </v-row>
         <v-row class="row main">
             <v-col cols="1">
