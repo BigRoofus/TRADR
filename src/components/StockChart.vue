@@ -390,7 +390,6 @@ export default {
                         if (_mass_to_flat <= 0) {
                             break
                         }
-                        continue
                     }
                     // If volume to flat < newest order
                     if (_mass_to_flat < open_orders[i].volume) {
