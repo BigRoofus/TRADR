@@ -100,7 +100,6 @@ const formatter = new Intl.NumberFormat('en-US', {
 })
 
 stockInit(Highcharts)
-console.clear()
 
 import price_history from '../../price_history/2_MinuteOHLC_3Days.json'
 
