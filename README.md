@@ -14,8 +14,8 @@ It also features a Replay option, where you can quickly replay the last few bars
 
 Currently it is functional, though there is a lot more that needs to be done.
 
-TODO:
-Modularize code
-Create Trade History panel
-Create Trade Analysis panel
-Set up Firebase DB to save stats, accounts, etc
+TODO:<br>
+Modularize code<br>
+Create Trade History panel<br>
+Create Trade Analysis panel<br>
+Set up Firebase DB to save stats, accounts, etc<br>
