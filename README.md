@@ -12,4 +12,4 @@ Reverse<br>
 
 It also features a Replay option, where you can quickly replay the last few bars of price action, as sometimes watching a chart move gives you more of a feeling for what's happening than seeing it frozen in time.
 
-Currently it is functional, though there is a lot more I want to do with it.
+Currently it is functional, though there is a lot more that needs to be done.
