@@ -1,6 +1,6 @@
 <template>
     <v-container class="container">
-        <v-row class="row navbar">
+        <v-row class="row titlebar">
             Press the Next Bar button to advance the chart. Press Buy to buy, or
             Sell to short-sell. Press one of the Flat buttons to close your
             trades.
@@ -673,7 +673,7 @@ export default {
 }
 </script>
 <style scoped>
-.navbar {
+.titlebar {
     width: 100%;
     position: absolute;
     top: 0;
