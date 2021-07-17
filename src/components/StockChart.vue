@@ -317,7 +317,6 @@ export default {
 
             // GET VOLUME ATR?
             this.total_pl = this.getpl()
-            console.log('open_orders ' + JSON.stringify(open_orders))
         },
         trade(_units) {
             let _chart_ohlc = this.stockOptions.series[0].data
@@ -342,7 +341,6 @@ export default {
             })
 
             this.total_pl = this.getpl()
-            console.log('open_orders ' + JSON.stringify(open_orders))
         },
         flat(_percent) {
             if (open_orders.length > 0) {
@@ -417,7 +415,6 @@ export default {
                     }
                 }
 
-                console.log('open_orders ' + JSON.stringify(open_orders))
                 this.total_pl = this.getpl()
             }
         },
@@ -437,7 +434,6 @@ export default {
                     this.trade(_total_mass * -1)
                 }
 
-                console.log('open_orders ' + JSON.stringify(open_orders))
                 this.total_pl = this.getpl()
             }
         },
