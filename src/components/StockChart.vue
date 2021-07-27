@@ -77,7 +77,6 @@ let minute_volume = []
 let display_period_ohlc = []
 let display_period_volume = []
 let flags = []
-
 let open_orders = []
 
 let offsethours = 5
@@ -171,7 +170,7 @@ for (let i in price_history['candles']) {
             volume_color = candle_down_color
         }
 
-        // Push it, push it good
+        // Push it. Push it real good
         display_period_ohlc.push({
             x: display_period_datetime,
             open: display_period_open,
