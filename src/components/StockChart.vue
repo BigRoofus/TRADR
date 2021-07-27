@@ -64,7 +64,7 @@
 // Modularize code
 // Create Trade History panel
 // Create Trade Analysis panel
-// Set up Firebase DB to save stats, accounts, etc
+// Set up DB to save stats, accounts, etc
 
 import { Chart } from 'highcharts-vue'
 import Highcharts from 'highcharts'
