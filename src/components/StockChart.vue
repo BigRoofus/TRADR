@@ -49,7 +49,7 @@
             </v-col>
         </v-row>
         <v-row class="row flushright">
-            <h1>&nbsp;{{ total_pl }}</h1>
+            <h1>{{ total_pl }}</h1>
         </v-row>
         <v-row>
             <ul class="ul">
@@ -60,7 +60,7 @@
 </template>
 
 <script>
-// TODO
+// TODO:
 // Modularize code
 // Create Trade History panel
 // Create Trade Analysis panel
@@ -91,12 +91,12 @@ const formatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
     currency: 'USD'
 
+    // Credit: haykam
+    // https://stackoverflow.com/questions/149055/how-to-format-numbers-as-currency-strings
+
     // These options are needed to round to whole numbers if that's what you want.
     //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
     //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
-
-    // Credit: haykam
-    // https://stackoverflow.com/questions/149055/how-to-format-numbers-as-currency-strings
 })
 
 stockInit(Highcharts)
