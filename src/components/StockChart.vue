@@ -173,6 +173,7 @@ for (let i in price_history['candles']) {
             volume_color = candle_down_color
         }
 
+        // Push it, push it good
         display_period_ohlc.push({
             x: display_period_datetime,
             open: display_period_open,
