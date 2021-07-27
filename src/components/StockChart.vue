@@ -251,11 +251,6 @@ for (let p in display_period_ohlc) {
 }
 
 export default {
-    props: {
-        partsdata: {
-            type: Array
-        }
-    },
     components: {
         highcharts: Chart,
         CogIcon
