@@ -79,8 +79,6 @@ let display_period_volume = []
 let flags = []
 
 let open_orders = []
-// let trade_history = []
-// let total_pl = 0
 
 let offsethours = 5
 let timeoffset = offsethours * 60 * 60 * 1000
