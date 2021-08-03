@@ -101,18 +101,23 @@ stockInit(Highcharts)
 
 import price_history from '../../price_history/2_MinuteOHLC_3Days.json'
 
-let itime, d
+let itime, d, h, m
 for (let i in price_history['candles']) {
     // Adjust for time offset
     itime = price_history['candles'][i]['datetime']
     itime -= timeoffset
 
-    // Skip this record if pre market or after hours data
+    // Skip this record if pre market or after hours data - - -
+    // About 4:02pm, I found that setting the cut off at exactly  4:00pm would
+    // sometimes stop data from between 3:50 and 4:00 from appearing
+    // ¯\_(ツ)_/¯
     d = new Date(itime)
-    if (d.getUTCHours() < 9) continue // < 9am
-    if (d.getUTCHours() == 9 && d.getUTCMinutes() < 30) continue // 9am - 9:30am
-    if (d.getUTCHours() == 16 && d.getUTCMinutes() > 2) continue // 4:02pm - 5pm
-    if (d.getUTCHours() > 16) continue // > 5pm
+    h = d.getUTCHours()
+    m = d.getUTCMinutes()
+    if (h < 9) continue // < 9am
+    if (h == 9 && m < 30) continue // 9am - 9:30am
+    if (h == 16 && m > 2) continue // 4:02pm - 5pm
+    if (h > 16) continue // > 5pm
 
     // CREATE MINUTE DATA - - - - - - - - - - - - - - - - - - - - - - - - - -
     minute_ohlc.push([
@@ -168,7 +173,6 @@ for (let i in price_history['candles']) {
             volume_color = candle_down_color
         }
 
-        // Push it. Push it real good
         display_period_ohlc.push({
             x: display_period_datetime,
             open: display_period_open,
@@ -242,7 +246,7 @@ for (let p in display_period_ohlc) {
             color: display_period_volume[p].color // volume color
         })
 
-        // Get Navigtor end(max) time - - - - - - - - - - - - - -
+        // Get Navigtor end(max) time - - - - - - - - - - - - - - - - - - - -
         nav_end = display_period_ohlc[p].x
     }
 }
@@ -288,7 +292,7 @@ export default {
             _ohlc.splice(_chart_ohlc.length + 1)
             _volume.splice(this.stockOptions.series[1].data.length + 1)
 
-            // set data
+            // Set data
             this.stockOptions.series[0].data = _ohlc
             this.stockOptions.series[1].data = _volume
 
@@ -359,7 +363,7 @@ export default {
                         // Subtract this trade's volume from _mass_to_flat
                         _mass_to_flat -= open_orders[i].volume
 
-                        //calc pl
+                        // Calc pl
                         _flat_pl =
                             (_current_close - open_orders[i].enter_price) *
                             open_orders[i].volume
@@ -387,7 +391,7 @@ export default {
                         // Subtract _mass_to_flat from this trade's volume
                         open_orders[i].volume -= _mass_to_flat
 
-                        //calc pl
+                        // Calc pl
                         _flat_pl =
                             (_current_close - open_orders[i].enter_price) *
                             _mass_to_flat
@@ -411,7 +415,7 @@ export default {
         },
         reverse() {
             if (open_orders.length > 0) {
-                // sum weight of all open orders
+                // Sum weight of all open orders
                 let _total_mass = this.get_total_mass()
 
                 // Close all
@@ -457,10 +461,10 @@ export default {
             trade_history: [],
 
             // ------------------------------------------------------------------------------------------------------------ //
-            // ------- CHART PARAMETERS ----------------------------------------------------------------------------------- //
+            // ------  CHART PARAMETERS  ---------------------------------------------------------------------------------- //
             // NOTE:  All "line" options are for drawing lines from
             // the opening of a trade to the closeing of a trade.
-            // I may not use this option.
+            // We may not use this option.
 
             stockOptions: {
                 chart: {
