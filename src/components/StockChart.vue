@@ -100,10 +100,10 @@ const formatter = new Intl.NumberFormat('en-US', {
 stockInit(Highcharts)
 
 // get random price history
-let _path = Math.floor(Math.random() * (2 + 1)) + '_MinuteOHLC_3Days.json'
+const MersenneTwister = require('mersenne-twister')
+let mt = new MersenneTwister()
+let _path = Math.floor(mt.random() * (2 + 1)) + '_MinuteOHLC_3Days.json'
 let price_history = require('../../price_history/' + _path)
-
-console.log('path=' + _path)
 
 let itime, d, h, m
 for (let i in price_history['candles']) {
