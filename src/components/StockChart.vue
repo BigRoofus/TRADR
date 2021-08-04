@@ -99,7 +99,11 @@ const formatter = new Intl.NumberFormat('en-US', {
 
 stockInit(Highcharts)
 
-import price_history from '../../price_history/2_MinuteOHLC_3Days.json'
+// get random price history
+let _path = Math.floor(Math.random() * (2 + 1)) + '_MinuteOHLC_3Days.json'
+let price_history = require('../../price_history/' + _path)
+
+console.log('path=' + _path)
 
 let itime, d, h, m
 for (let i in price_history['candles']) {
