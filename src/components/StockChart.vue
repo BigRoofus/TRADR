@@ -61,6 +61,7 @@
 
 <script>
 // TODO:
+// Makeover font end look
 // Modularize code
 // Create Trade History panel
 // Create Trade Analysis panel
@@ -96,8 +97,6 @@ const formatter = new Intl.NumberFormat('en-US', {
     //minimumFractionDigits: 0, // (this suffices for whole numbers, but will print 2500.10 as $2,500.1)
     //maximumFractionDigits: 0, // (causes 2500.99 to be printed as $2,501)
 })
-
-stockInit(Highcharts)
 
 // get random price history
 const MersenneTwister = require('mersenne-twister')
@@ -193,6 +192,8 @@ for (let i in price_history['candles']) {
         })
     }
 }
+
+stockInit(Highcharts)
 
 // CREATE INITIAL CHART VIEW DATA - - - - - - - - - - - - - - - - - - - - - -
 let initial_chart_ohlc = []
