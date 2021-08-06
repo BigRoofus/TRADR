@@ -426,12 +426,7 @@ export default {
                 this.flat(100)
 
                 // Open reverse trade
-                if (_total_mass > 0) {
-                    this.trade(_total_mass * -1)
-                }
-                if (_total_mass < 0) {
-                    this.trade(_total_mass * -1)
-                }
+                this.trade(_total_mass * -1)
 
                 this.total_pl = this.getpl()
             }
