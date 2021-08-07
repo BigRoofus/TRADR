@@ -101,7 +101,7 @@ const formatter = new Intl.NumberFormat('en-US', {
 // get random price history
 const MersenneTwister = require('mersenne-twister')
 let mt = new MersenneTwister()
-let _path = Math.floor(mt.random() * (2 + 1)) + '_MinuteOHLC_3Days.json'
+let _path = Math.floor(mt.random() * 13) + '_MinuteOHLC_3Days.json'
 let price_history = require('../../price_history/' + _path)
 
 let itime, d, h, m
