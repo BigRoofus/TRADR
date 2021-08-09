@@ -14,7 +14,7 @@ Note that selling a position that have you a previous buy position in will not c
 
 Now, you may be wondering, why not just close out the buy at $12.50, realize the gains, and free up the capital for the next trade?  Possible reasons include not realizing gains until a given time for tax purposes, and avoiding the [pattern day trading rule](https://en.wikipedia.org/wiki/Pattern_day_trader).
 
-Another reason for allowing multiple concurrent positions are the complex [grid systems](https://admiralmarkets.com/education/articles/forex-strategy/forex-grid-trading-strategy-explained) some traders use that involve having dozens of positions open at the same time.
+Another reason for allowing multiple concurrent positions are the complex [grid systems](https://admiralmarkets.com/education/articles/forex-strategy/forex-grid-trading-strategy-explained) some traders use that involve having dozens of positions open at the same time.  Though you could argue grid systems aren't really day-trading, we saw no reason not to allow them.
 
 ### Flat (All, 50%, or 25%)
 Flatting closes out positions, in whole or in part.  Reasons for closing out trades a bit at at time include [scaling out](https://www.investopedia.com/terms/s/scale-out.asp).
