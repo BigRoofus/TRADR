@@ -10,7 +10,7 @@ Profit off upward movement in the instrument by buying at the current price.  Th
 ### Sell (Short-Sell)
 Profit off downward movement in the instrument by short selling.  These can be stacked to trade in bigger proportions.
 
-Note that selling a position that have you a previous buy position in will not close out the original buy, and that it is possible to have a buy and a sell (or any combination of positions) open in the same instrument.  For example, buy 100 shares, then sell 100 shares.  This will lock-in the current profit or loss, and will not produce any more gains or losses as the price moves.  For example, if you bought 100 shares at $1, then the price went up to $1.25, and you sold 100 shares, this would lock in a profit of $25.
+Note that selling a position that have you a previous buy position in will not close out the original buy, and that it is possible to have a buy and a sell (or any combination of positions) open in the same instrument.  For example, buy 100 shares, then sell 100 shares.  This will lock-in the current profit or loss, and will not produce any more gains or losses as the price moves.  For example, if you bought 100 shares at $1, then the price went up to $1.25, and you sold 100 shares, this would lock-in a profit of $25.
 
 Now, you may be wondering, why not just close out the buy at $1.25?  Possible reasons include not realizing gains until a given time for tax purposes, and avoiding the pattern day trading rule.
 
