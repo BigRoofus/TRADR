@@ -15,7 +15,7 @@ Note that selling a position that have you a previous buy position in will not c
 Now, you may be wondering, why not just close out the buy at $12.50, realize the gains, and free up the capital for the next trade?  Possible reasons include not realizing gains until a given time for tax purposes, and avoiding the pattern day trading rule.
 
 ### Flat (All, 50%, or 25%)
-This closes out positions, in whole or in part.  Reasons for not closing out trades 100% at at time include scaling out.
+Flatting closes out positions, in whole or in part.  Reasons for not closing out trades 100% at at time include [scaling out](https://www.investopedia.com/terms/s/scale-out.asp).
 
 ### Reverse
 Completely closes out your position(s) and opens an identically sized position in the opposite direction.
