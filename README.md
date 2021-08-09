@@ -17,7 +17,7 @@ Why not just close out the buy at $12.50, realize the gains, and free up the cap
 Another reason for allowing multiple concurrent positions are the complex [grid systems](https://admiralmarkets.com/education/articles/forex-strategy/forex-grid-trading-strategy-explained) some traders use that involve having dozens of positions open at the same time.  Though you could argue that grid systems aren't really day-trading, we saw no reason not to allow them.
 
 ### Flat (All, 50%, or 25%)
-Flatting closes out positions, in whole or in part.  Reasons for closing out trades a bit at at time include [scaling out](https://www.investopedia.com/terms/s/scale-out.asp).
+Flatting is the only way to close out positions, in whole or in part.  Remember that buying or selling always adds to your current position and increases the amount of capital you have invested. Reasons for closing out trades a bit at at time include [scaling out](https://www.investopedia.com/terms/s/scale-out.asp).
 
 ### Reverse
 Completely closes out your position(s) and opens an identically sized position in the opposite direction.
