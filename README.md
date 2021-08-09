@@ -12,7 +12,7 @@ Profit off potential downward movement in the instrument by [short selling](http
 
 Note that selling a position that have you a previous buy position in will not close out the original buy (or vice versa), and that it is possible to have a buy and a sell (or any combination of positions) open in the same instrument at the same time.  For example, buying 100 shares, then selling 100 shares.  This will lock-in the current profit or loss, and will not produce any more gains or losses as the price moves.  For example, if you bought 100 shares at $10, then the price went up to $12.50, and you sold 100 shares, this would lock-in a profit of $250, whether the price moves up to $300, or down to $1, or literally anywhere else.
 
-Now, you may be wondering, why not just close out the buy at $12.50, realize the gains, and free up the capital for the next trade?  Possible reasons include not realizing gains until a given time for tax purposes, and avoiding the pattern day trading rule.
+Now, you may be wondering, why not just close out the buy at $12.50, realize the gains, and free up the capital for the next trade?  Possible reasons include not realizing gains until a given time for tax purposes, and avoiding the [pattern day trading rule](https://en.wikipedia.org/wiki/Pattern_day_trader).
 
 Another reason for allowing multiple concurrent positions are the complex [grid systems](https://admiralmarkets.com/education/articles/forex-strategy/forex-grid-trading-strategy-explained) some traders use that involve having dozens of positions open at the same time.
 
