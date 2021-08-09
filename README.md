@@ -23,4 +23,4 @@ Flatting is the only way to close out positions, in whole or in part.  Remember 
 Completely closes out your position(s) and opens an identically sized position in the opposite direction.
 
 ### Replay
-Replay quickly replays the last few bars of price action, as sometimes watching a chart move gives you more of a feeling for what's happening than seeing it frozen in time.
+Quickly replays the last few bars of price action, as sometimes watching a chart move gives you more of a feeling for what's happening than seeing it frozen in time.
