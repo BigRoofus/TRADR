@@ -2,9 +2,9 @@
 
 TRADR is an app designed to make you better at day-trading US stocks.
 
-It features advanced order types, allowing more advanced strategies, such as those seen in DMA software like DAS Trader.
+It features advanced order types, allowing for more advanced strategies, such as those seen in DMA software like DAS Trader.
 
-- Buy
+## Buy
 - Sell
 - Short-Sell
 - Flat All, 50%, or 25%
