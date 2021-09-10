@@ -71,7 +71,7 @@ import { Chart } from 'highcharts-vue'
 import Highcharts from 'highcharts'
 import stockInit from 'highcharts/modules/stock'
 import CogIcon from 'vue-material-design-icons/Cog.vue'
-import { getpl2 } from '../statics/game-functions.js'
+// import { getpl2 } from '../statics/game-functions.js'
 
 let minute_ohlc = []
 let minute_volume = []
